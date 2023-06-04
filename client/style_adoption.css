@@ -1,0 +1,104 @@
+
+nav{
+  width: 100%; 
+  background-color: #DCDCDC; 
+}
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+nav > ul::after{
+  content:"";
+  display: block; 
+  clear: both; 
+}
+
+nav > ul >li{
+
+  float: left; 
+  position: relative;
+}
+ nav > ul > li > a{
+padding: 20px 30px; 
+color:#FFF;
+ }
+ nav >ul > li a:hover{
+  padding: 15px 30px 20px 30px; 
+
+ }
+nav li{
+  list-style-type: none; 
+}
+.submenu {
+  display: none; 
+}
+nav a{
+  display: inline-block;
+  text-decoration: none; 
+}
+/*passer la souris*/
+nav li:hover .submenu
+{
+  display:inline-block;
+  position: absolute;
+  top: 100%;
+  left:0px;
+  padding: 0px; 
+  z-index: 1000; 
+}
+.submenu li {
+  border-bottom: 1px solid #CCC; 
+}
+.submenu li a{
+  padding: 15px 30px; 
+  font-size: 13px; 
+  color: #222538; 
+  width: 270px; 
+}
+.menu-Animaux.hover{
+
+ border-top: 5px solid #e44d26; 
+ background-color: RGBa(228, 77, 38, 0.15);
+
+}
+
+.menu-Animaux:hover{
+
+ border-top: 5px solid #BBB; 
+ background-color: RGBa(220, 220, 220, 0.15);
+
+}
+.menu-Animaux.submenu{
+  background-color: RGB(230, 100, 40);
+  }
+
+.submenu li :hover a{
+   color: #EEE; 
+   font-weight: bold; 
+
+}
+.menu-Animaux .submenu li:hover{
+  background-color: RGB(210, 77, 60);
+
+}
+
+<style>
+      body {
+       padding: 20px;
+      }
+      label {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1c87c9;
+      }
+      input {
+        width: 50%;
+        height: 28px;
+        padding: 4px 10px;
+        border: 1px solid #666;
+        background: #FFFFFF;
+        color: #1c87c9;
+        font-size: 16px;
+      }
+    </style>
+    
